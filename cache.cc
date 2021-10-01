@@ -286,6 +286,12 @@ int main(int argc,char** argv){
     int blocksize = stoi(argv[3]);
     char repl = argv[4][0];
 
+    if(blocksize == 1){
+        cout<<"Must have blocksize > 1 byte for 1 bit block offset"<<endl;
+        cout<<"0 bit block offset not supported"<<endl;
+        exit(-1);
+    }
+
     //test inputted vals
     //printf("nk: %i assoc: %i blocksize: %i repl: %c\n",nk,assoc,blocksize,repl);
 
