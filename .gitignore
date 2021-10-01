@@ -1,0 +1,5 @@
+*.gz
+*.trace
+cache
+cmake-build-debug
+*.txt
