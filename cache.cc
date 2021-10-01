@@ -144,9 +144,9 @@ public:
         for(int i = 0; i < cacheEntrySize; i++){
             lut.push_back(new tableEntry());
         }
-        cout<<"tag:"<<tag;
-        cout<<" index:"<<index;
-        cout<<" block_offset:"<<block_offset<<endl;
+       // cout<<"tag:"<<tag;
+       // cout<<" index:"<<index;
+       // cout<<" block_offset:"<<block_offset<<endl;
     }
 
     vector<long long int> formatAddr(string addr){
@@ -287,7 +287,7 @@ int main(int argc,char** argv){
     char repl = argv[4][0];
 
     //test inputted vals
-    printf("nk: %i assoc: %i blocksize: %i repl: %c\n",nk,assoc,blocksize,repl);
+    //printf("nk: %i assoc: %i blocksize: %i repl: %c\n",nk,assoc,blocksize,repl);
 
     //create our cache to simulate
     cache simCache = cache(nk,assoc,blocksize,repl);
